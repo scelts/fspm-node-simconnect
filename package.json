@@ -1,37 +1,37 @@
 {
-  "name": "node-simconnect",
-  "version": "1.3.0-canary.9",
-  "description": "Wrapper for the SimConnect SDK for Flight Simulator X and Prepar3D (Windows only)",
+  "name": "fspm-node-simconnect",
+  "version": "1.0.0",
+  "description": "Wrapper for the SimConnect SDK for Microsoft Flight Simulator (Windows 64bit only)",
   "main": "index.js",
   "scripts": {
-    "rebuild": "node-gyp configure rebuild --msvs_version=2015 --arch=ia32",
-    "install": "node scripts/install.js",
-    "start": "node examples/nodejs/example.js"
+    "build": "npm run gypbuild && node build.js",
+    "gypbuild": "node-gyp configure rebuild --msvs_version=2019"
   },
   "author": "Even Arneberg Rognlien",
+  "contributors": ["scelt"],
   "license": "MIT",
   "gypfile": false,
   "dependencies": {
+    "fs-extra": "^9.0.1",
     "nan": "^2.14.0"
-  },
-  "directories": {
-    "example": "examples"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/EvenAR/node-simconnect.git"
+    "url": "https://github.com/scelts/fspm-node-simconnect"
   },
   "keywords": [
-    "FSX",
-    "P3D",
-    "SDK",
+    "MSFS",
+    "Microsoft",
+    "Flight",
+    "Simulator",
+    "2020",
     "SimConnect",
-    "Prepar3D",
     "FlightSimulator",
-    "Simulator"
+    "Simulator",
+    "FSPM"
   ],
   "bugs": {
-    "url": "https://github.com/EvenAR/node-simconnect/issues"
+    "url": "https://github.com/scelts/fspm-node-simconnect/issues"
   },
-  "homepage": "https://github.com/EvenAR/node-simconnect#readme"
+  "homepage": "https://github.com/scelts/fspm-node-simconnect"
 }

@@ -4,12 +4,12 @@
             "target_name": "node-simconnect",
             "sources": [ "src/addon.cc" ],
             "include_dirs": [
-                "SimConnect/Inc",
+                "./SimConnect SDK/include",
 				"<!(node -e \"require('nan')\")"
             ],
             "link_settings": {
                 "libraries": [
-                    "../SimConnect/lib/SimConnect"
+                    "../SimConnect SDK/lib/SimConnect"
                 ]
             },
             'configurations': {
